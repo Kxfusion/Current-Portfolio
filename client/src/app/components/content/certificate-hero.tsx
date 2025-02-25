@@ -1,3 +1,5 @@
+import { generatePageText, imageGenerator } from "@/app/utils";
+
 export const CertificateHero = () => {
     const paragraphs = [
         "In early 2021, I joined the team at Certificate Hero to help create a truly modern Certificate of Issuance platform. Initially the team was focused on putting together a MVP to demo and my contributions in the first couple of months included a sign-up/sign-in flow and the original dashboard. Additionally, I quickly made my way into a leadership role through my contributions to the architectural structure of the core application and mentorship of other engineers.",
@@ -6,11 +8,7 @@ export const CertificateHero = () => {
         "After the team got hit with layoffs in 2024, I took some time to recover from a rough bout of long COVID and I am currently still looking to find a new team to collaborate with and continue my journey."
     ];
 
-    const pageText = paragraphs.map(text => {
-        return <p className="grow-1 p-5 w-full lg:w-[50%] text-justify text-gray-300">{text}</p>;
-    })
-
-    const imageGenerator = (source: string, customRule?: string) => <img className={`${customRule} grow-0 w-full lg:w-[40%] m-auto p-5`} src={source} />
+    const pageText = generatePageText(paragraphs);
 
     const images = [
         imageGenerator("CertificateHero-Logo.png", "hidden lg:block"),

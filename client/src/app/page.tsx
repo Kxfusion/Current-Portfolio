@@ -11,9 +11,9 @@ export default function Dashboard() {
   const [currentTab, setCurrentTab] = useState<ValidTab>("Todo App");
   const validTabs: ValidTab[] = [
     "Todo App",
-    "Word Scramble",
     "Certificate Hero",
-    "Airfox"
+    "Airfox",
+    "Word Scramble",
   ];
 
   return (
