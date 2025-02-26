@@ -22,7 +22,7 @@ export default function Dashboard() {
       >
         <div className="w-full flex flex-row flex-wrap">
           <Sidebar />
-          <div className="w-full grow-0 md:w-[70%] xl:w-[80%] max-h-screen overflow-x-hidden overflow-y-scroll">
+          <div className="w-full grow-0 max-h-[95vh] md:w-[70%] xl:w-[80%] md:max-h-screen overflow-x-hidden overflow-y-scroll">
             <Header />
             <Content />
           </div>

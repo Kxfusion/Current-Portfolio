@@ -12,6 +12,6 @@ export const Header = () => {
     };
 
     return (
-        <div className="fixed w-[80%] text-center text-gray-300 text-xl/20 h-20 bg-gray-950">{ titles[currentTab] }</div>
+        <div className="fixed w-full md:w-[80%] text-center text-gray-300 text-xl/20 h-20 bg-gray-950">{ titles[currentTab] }</div>
     );
 };
